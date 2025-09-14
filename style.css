@@ -1,0 +1,693 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ******************************** Home Section *************************************************** */
+.main-section{
+    height: 730px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+    height: 80px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.logo{
+    height: inherit;
+    width: 30%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar{
+    height: inherit;
+    width: 70%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.navbar li{
+    text-transform: uppercase;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+}
+.navbar li a:hover{
+    border-bottom: 2px solid white;
+}
+.main-container{
+    height: 650px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-content1{
+    height: inherit;
+    width: 60%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.main-content1-heading{
+    height: 300px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-content1-heading h1{ font-size: 48px;
+    text-align: center;
+    white-space: nowrap;       
+    overflow: hidden;          
+    border-right: 3px solid white; /* Cursor */
+    width: 0;                  
+    animation: typing 4s steps(40, end) forwards, 
+               blink 0.7s step-end infinite;
+}
+/* Typing effect (1 char at a time) */
+@keyframes typing {
+    from { width: 0; }
+    to   { width: 32ch; }   /* total characters of your text */
+}
+
+/* Blinking cursor */
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.main-content1-desc{
+    height: 150px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-content1-desc p{
+    font-size: large;
+    text-align: justify;
+    padding: 60px;
+}
+.main-content1-btn{
+    height: 100px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-content1-btn button{
+    height: 50px;
+    width: 30%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background-color: green;
+}
+.main-content1-icons{
+    height: 100px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-content1-icons ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.main-content2{
+    height: inherit;
+    width: 40%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* *********************************** About Us Section ******************************************** */
+
+.about-us{
+    height: 750px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.aboutus-head{
+    height: 80px;
+    width: 80%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutus-head h1{
+    font-size: 48px;
+}
+.aboutus-head h1 span{
+    color: red;
+}
+.aboutus-con{
+    height: 120px;
+    width: 80%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutus-con p{
+    font-size: large;
+    text-align: center;
+}
+.aboutus-main{
+    height: 500px;
+    width: 80%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.aboutus-main1{
+    height: inherit;
+    width: 60%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutus-main1 p{
+    height: 80%;
+    width: 100%;
+    /* border: 1px solid black; */
+    font-size: large;
+    text-align: justify;
+    padding: 50px;
+}
+.aboutus-main1 .aboutus-main1-btn{
+    height: 20%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutus-main1-btn button{
+    height: 50px;
+    width: 25%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: grey;
+    color: white;
+}
+.aboutus-main2{
+    height: inherit;
+    width: 40%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ************************************ Our Library Section ******************************************* */
+.our-library{
+    height: 900px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.our-head{
+    height: 80px;
+    width: 80%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.our-head h1{
+    font-size: 48px;
+}
+.our-head h1 span{
+    color: red;
+}
+.our-con{
+    height: 120px;
+    width: 80%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.our-con p{
+    font-size: large;
+    text-align: center;
+}
+.our-main{
+    height: 550px;
+    width: 80%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+}
+.our-main img{
+    height: 550px;
+    width: 100%;
+}
+.our-btn{
+    height: 130px;
+    width: 100%;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.our-btn button{
+    height: 60px;
+    width: 20%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: grey;
+    color: white;
+}
+
+
+/* **************************************************** Our Book ************************************************** */
+.our-book{
+    height: 900px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.book-head{
+    height: 80px;
+    width: 80%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.book-head h1{
+    font-size: 48px;
+}
+.book-head h1 span{
+    color: red;
+}
+.book-con{
+    height: 120px;
+    width: 80%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.book-con p{
+    font-size: large;
+    text-align: center;
+}
+.book-img{
+    height: 500px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.book-img1{
+    height: 450px;
+    width: 27%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.book-img11{
+    height: 200px;
+    width: 70%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-image: url('images/book-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.book-img2{
+    height: 450px;
+    width: 37%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.book-img22{
+    height: 420px;
+    width: 90%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-image: url('images/book-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.book-img3{
+    height: 450px;
+    width: 27%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.book-img33{
+    height: 200px;
+    width: 70%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-image: url('images/book-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.book-con2{
+    height: 100px;
+    width: 35%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.book-con2 p{
+    font-size: large;
+    text-align: center;
+}
+.book-btn{
+    height: 100px;
+    width: 30%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.book-btn button{
+    height: 60px;
+    width: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: grey;
+    color: white;
+}
+
+
+/* **************************************** Issue Book *********************************** */
+.issue-book{
+    height: 600px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* **************************************** Return Book *********************************** */
+.return-book{
+    height: 600px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* ************************************** Contact Us ****************************************** */
+.contact-us{
+    height: 700px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-head{
+    height: 80px;
+    width: 80%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-head h1{
+    font-size: 48px;
+    color: gray;
+}
+.contact-head h1 span{
+    color: red;
+}
+.contact-container{
+    height: 620px;
+    width: 60%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    gap: 20px;
+    background-color: darkslategray;
+}
+.name{
+    height: 50px;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 20px;
+}
+.phone{
+    height: 50px;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 20px;
+}
+.email{
+    height: 50px;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 20px;
+}
+.message{
+    height: 50px;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 20px;
+}
+.contact-container button{
+    margin-top: 50px;
+    height: 50px;
+    width: 20%;
+    border: 1px solid white;
+    border-radius: 100px;
+    background-color: gray;
+    color: white;
+}
+
+
+/* ***************************************** Footer *************************************** */
+.footer{
+    height: 200px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-content1{
+    height: inherit;
+    width: 40%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-con1-heading{
+    height: 70px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-con1-heading h1{
+    color: white;
+    border-bottom: 1px solid white;
+}
+.footer-con1-icons{
+    height: 120px;
+    width: 70%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-con1-icons ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.footer-content2{
+    height: inherit;
+    width: 60%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-con2-heading{
+    height: 70px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-con2-heading h1{
+    color: white;
+    border-bottom: 1px solid white;
+}
+.footer-con2-mail{
+    height: 120px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mail-input{
+    height: 60px;
+    width: 80%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mail-input .email{
+    height: inherit;
+    width: 70%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mail-input button{
+    height: inherit;
+    width: 30%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    color: white;
+}
+
+
+/* *************************************** Copy Right ******************************************* */
+.copyright{
+    height: 60px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyright span{
+    color: red;
+}
